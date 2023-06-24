@@ -1,0 +1,242 @@
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red: #ff3150;
+    --yallow: #ffc400;
+    --section: #eff7fa;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red);
+    color: var(--yallow);
+    padding: 0.5rem 1rem;
+
+
+}
+
+.main-btn:hover {
+    background-color: #fc2243;
+    color: var(--yallow);
+}
+
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* statr navpar */
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green);
+    transition: 0.3s;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+
+.navbar .search svg {
+    color: var(--green);
+}
+
+/* end navpar */
+/* start landibg */
+.landing {
+    background-color: var(--dark);
+    min-height: calc(100vh - 71.95px);
+}
+
+/* end landibg */
+/* start features */
+.features .icon-holder {
+    height: 200px;
+    position: relative;
+
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section);
+}
+
+.features .icon-holder .icon {
+    color: var(--green);
+    left: 112px;
+
+}
+
+.features .feat h4 {
+    color: var(--yallow);
+}
+
+/* End features */
+/* start our work */
+.our-work {
+    background-color: var(--section);
+}
+
+.our-work .active {
+    background-color: var(--red);
+    color: var(--yallow);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc57;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.our-work .box:hover::before {
+    transform: translateX(calc(-100% - 5px));
+}
+
+/* End our work */
+/* start-stuff */
+.stuff .description {
+    max-width: 500px;
+}
+
+/* End-stuff */
+/* our-team */
+.team {
+    background-color: var(--section);
+}
+
+.team h2 {
+    color: var(--yallow);
+}
+
+.team .box h4 {
+    background-color: var(--green);
+}
+
+/* end our-team */
+/* project */
+.project {
+    background-color: var(--dark);
+}
+
+/*End project */
+/* start sub */
+.sub {
+    background-color: var(--yallow);
+}
+
+.sub input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sub input[type="text"]:focus {
+    outline: none;
+}
+
+.sub ::placeholder {
+    color: white;
+}
+
+.sub input[type="submit"] {
+    background-color: var(--dark);
+    color: var(--yallow);
+}
+
+/* End sub */
+/* start footer */
+.footer {
+    background-color: var(--dark);
+}
+
+.footer .copyright>span {
+    color: var(--green);
+}
+
+.footer .copyright div span {
+    color: var(--yallow);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    color: #1877f2;
+}
+
+.footer .twitter {
+    color: #3085f5;
+}
+
+.footer .youtube {
+    color: red;
+}
+
+.footer .linkedin {
+    color: #ffffff;
+}
+
+/* End footer */
